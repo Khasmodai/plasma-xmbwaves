@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+      http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+  <kcfgfile name=""/>
+
+  <group name="General">
+    <!-- Performance & Playback -->
+    <entry name="FpsLimit" type="Int">
+      <label>Frame rate limit (0 = VSync, -1 = Static/Paused, >0 = Target FPS)</label>
+      <default>0</default>
+    </entry>
+    <entry name="SpeedMultiplier" type="Double">
+      <label>Animation speed multiplier</label>
+      <default>1.0</default>
+    </entry>
+    <entry name="SmartPause" type="Bool">
+      <label>Automatically pause when covered by maximized or fullscreen windows</label>
+      <default>true</default>
+    </entry>
+
+    <!-- Color Mode: 0 = Preset, 1 = Harmonized, 2 = Custom -->
+    <entry name="ColorMode" type="Int">
+      <label>Color customization mode</label>
+      <default>0</default>
+    </entry>
+    <entry name="PresetScheme" type="String">
+      <label>Selected curated color preset ID</label>
+      <default>celestial_silk</default>
+    </entry>
+
+    <!-- Mode 1: Harmonized -->
+    <entry name="HarmonyBaseColor" type="Color">
+      <label>Base seed color for harmonious color scheme generation</label>
+      <default>#5b8dd9</default>
+    </entry>
+    <entry name="HarmonyStyle" type="Int">
+      <label>Harmony background style (0 = Soft Silk Light, 1 = Deep XMB Dark, 2 = Rich Dusk)</label>
+      <default>0</default>
+    </entry>
+
+    <!-- Mode 2: Custom (Defaulted to Celestial Silk) -->
+    <entry name="BgColorStart" type="Color">
+      <label>Background gradient start color (top-left, 0%)</label>
+      <default>#c9d6e8</default>
+    </entry>
+    <entry name="BgColorMid" type="Color">
+      <label>Background gradient middle color (50%)</label>
+      <default>#b8c8df</default>
+    </entry>
+    <entry name="BgColorEnd" type="Color">
+      <label>Background gradient end color (bottom-right, 100%)</label>
+      <default>#c4d0e4</default>
+    </entry>
+    <entry name="Wave1Color" type="Color">
+      <label>Wave 1 ribbon color (highest ribbon)</label>
+      <default>#8fb0e8</default>
+    </entry>
+    <entry name="Wave2Color" type="Color">
+      <label>Wave 2 ribbon color</label>
+      <default>#9a8fe0</default>
+    </entry>
+    <entry name="Wave3Color" type="Color">
+      <label>Wave 3 ribbon color</label>
+      <default>#7aa2e6</default>
+    </entry>
+    <entry name="Wave4Color" type="Color">
+      <label>Wave 4 ribbon color (lowest deep ribbon)</label>
+      <default>#3f58b0</default>
+    </entry>
+  </group>
+</kcfg>

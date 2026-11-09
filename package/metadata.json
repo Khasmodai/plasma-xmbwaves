@@ -1,0 +1,19 @@
+{
+    "KPackageStructure": "Plasma/Wallpaper",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "XMB Waves Contributors"
+            }
+        ],
+        "Category": "",
+        "Description": "Hardware-accelerated PSP/PS3 XMB-style animated ribbon waves wallpaper",
+        "Icon": "preferences-desktop-wallpaper",
+        "Id": "org.kde.plasma.xmbwaves",
+        "License": "MIT",
+        "Name": "XMB Waves",
+        "Website": "https://kde.org/plasma-desktop"
+    },
+    "Keywords": "xmb;waves;ps3;psp;animated;shader;ribbon;gradient;",
+    "X-KDE-ParentApp": "org.kde.plasmashell"
+}
